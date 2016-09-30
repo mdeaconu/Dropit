@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cuc-NI-lBL" customClass="BezierPathView">
+                            <view alpha="0.65000000000000002" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cuc-NI-lBL" customClass="BezierPathView">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -30,12 +30,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Cuc-NI-lBL" secondAttribute="trailing" id="17w-EC-vvk">
-                                <variation key="widthClass=compact" constant="20"/>
+                                <variation key="widthClass=compact" constant="11"/>
                             </constraint>
                             <constraint firstItem="Cuc-NI-lBL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Stp-Jq-JWY">
+                                <variation key="widthClass=compact" constant="13"/>
+                            </constraint>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cuc-NI-lBL" secondAttribute="bottom" constant="48" id="piV-HS-bdk">
                                 <variation key="widthClass=compact" constant="20"/>
                             </constraint>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cuc-NI-lBL" secondAttribute="bottom" constant="48" id="piV-HS-bdk"/>
                             <constraint firstItem="Cuc-NI-lBL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="yXQ-7e-qsn"/>
                         </constraints>
                         <variation key="default">
